@@ -30,30 +30,79 @@
 
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {  font-family:"NotCourierSansRegular", "Droid Sans", sans-serif;
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background: url(../images/bg-left-no-penguins.png) left top no-repeat,  url(../images/just-penguins.png) right top no-repeat;
   text-align:center;
   margin-right:7%;
   margin-left:7%;
 }
-div#wrapper { 
+
+iframe {
+  float:left;
+  margin-right:64px;
+}
+
+img {
+  text-decoration:none;
+  border: 0 solid;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.inline li {
+  display: inline;
+  float:left;
+  font-size:80%;
+  margin-right: 20px;
+}
+
+
+/* change all id elements to classes in the html */
+.wrapper { 
   text-align: left; 
   width: 900px; 
   margin-left: auto;
   margin-right: auto;
 }
-#company {
+
+.company {
   color: #6495ED;
   text-shadow: 2px 2px 4px #FF9912;
   -webkit-transform: scale(1.3);
   -moz-transform: scale(1.3);
   transform: scale(1.3);
 }
-#slogan {
+
+.slogan {
   color: #6495ED;
   text-shadow: 2px 2px 4px #FF9912;
 }
-#primary {
+
+.primary {
   height: 32px;
   text-align:center;
   padding-top: 13px;
@@ -63,11 +112,13 @@ div#wrapper {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-#primary ul li {
+
+.primary ul li {
   display: inline;
   padding-left: 43px;
 }
-#primary li a {
+
+.primary li a {
   padding: 5px 15px;
   color: #6495ED;
   text-shadow: 2px 2px 4px #FF9912;
@@ -78,16 +129,19 @@ div#wrapper {
   -moz-border-radius-bottomright: 4px;
   border-radius-bottom-right: 4px;
 }
-#primary li a:hover {
+
+.primary li a:hover {
   color: #1e90ff;
   background: #212121;
 }
-div#details {
+
+.details {
   text-align:center;
   margin-left: auto;
   margin-right: auto;
   }
-div.footer {
+
+.footer {
   font-size:80%;
   width: 100%; 
   padding-top: 5px;
@@ -97,24 +151,23 @@ div.footer {
   margin-left: auto;
   margin-right: auto;
 }
-div.width {
+
+.width {
   width: 100%; 
   text-align:left;
   margin-left: auto;
   margin-right: auto;
 }
-img {
-  text-decoration:none;
-  border: 0 solid;
-}
-img#logo {
+
+.logo {
   text-decoration:none;
   border:0 solid;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-img#html5-logo {
+
+.logo-html5 {
   text-decoration:none;
   float:left;
   border:0 solid;
@@ -124,7 +177,8 @@ img#html5-logo {
   padding-right: 10px;
   max-height: 32px;
 }
-img#css3-logo {
+
+.logo-css3 {
   text-decoration:none;
   float:right;
   border:0 solid;
@@ -134,27 +188,29 @@ img#css3-logo {
   padding-left: 10px;
   max-height: 33px;
 }
-img.noborder {
+
+.noborder {
   border: 0 none;
 }
-#labels {
+
+.labels {
   float:left;
   text-align:right;
 }
-#contact {
+
+.contact {
   text-align:left;
 }
-iframe {
-  float:left;
-  margin-right:64px;
-}
-#floater {
+
+.floater {
   text-align:center;
 }
+
 /* used to style 404 iframe pulling data from notfound.org */
-#notfound_org {
+.notfound_org {
   border:0;
 }
+
 /* general css classes for layout manipulation */
 /* layout styling for custom 404 page elements */
 .fourohfour {
@@ -163,6 +219,7 @@ iframe {
   text-align:left;
   width: 100%; 
 }
+
 /* used to style a generic block of code */
 .code {
   margin-left:auto;
@@ -172,33 +229,21 @@ iframe {
   font-size:11px
   text-align:left
 }
-ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
-li {
-  list-style-type: none;
-}
-#inline li {
-  display: inline;
-  list-style-type:none;
-  float:left;
-  font-size:80%;
-  margin-right: 20px;
-}
+
 /* used to mark a public repo */
-li.public {
+.public-repo {
   padding-left: 10px;
   background-position: 0 2px;
   background-image: url(images/icon_unlocked.gif);
 }
+
 /* used to mark a private repo */
-li.private {
+.private-repo {
   padding-left: 10px;
   background-position: 0 2px;
   background-image: url(images/icon_locked.gif);
 }
+
 /* self-explanatory */
 .superscript {
   vertical-align: super;

@@ -13,10 +13,10 @@ div#nav {
   /*text-shadow: 2px 2px 7px #111;
   border: 1px solid #9c9c9c; */
 }
-div.header {
+.header {
   color:#9c9c9c;
 }
-div.footer {
+.footer {
   color:#9c9c9c;
 }
 a {
@@ -34,7 +34,8 @@ a#current {
 a:hover {
   color:#a0522d;
 }
-img.shadow {
+/* change this to use the proper box model settings */
+.shadow {
   border: 0 none;
   -moz-box-shadow: 3px 3px 4px #111;
   -webkit-box-shadow: 3px 3px 4px #111;
